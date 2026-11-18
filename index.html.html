@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GabiVeda | Chás Terapêuticos & Escalda-Pés Ayurvédicos</title>
+  <!-- Fontes artesanais e orgânicas semelhantes à referência -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Padrão botânico de fundo em SVG (Anis-estrelado, Gengibre, Canela, Cardamomo e Folhas) -->
+  <div class="botanical-bg" aria-hidden="true"></div>
+
+  <!-- Cabeçalho -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="brand">
+        <span class="brand-icon">🌿</span>
+        <span class="brand-name">GabiVeda</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#ayurveda">O Ayurveda</a>
+        <a href="#doshas">Os Doshas</a>
+        <a href="#produtos">Chás & Escalda-Pés</a>
+        <a href="#sobre">Sobre</a>
+      </nav>
+      <button class="cart-trigger" id="openCartBtn" aria-label="Abrir sacola de pedidos">
+        <span>Sacola</span>
+        <span class="cart-badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Sabedoria Ancestral • Feito à Mão</p>
+      <h1 class="hero-title">Equilíbrio para o corpo, calma para a mente</h1>
+      <p class="hero-subtitle">
+        Blends artesanais de chás terapêuticos e escalda-pés preparados com ervas naturais selecionadas segundo os princípios do Ayurveda.
+      </p>
+      <div class="hero-actions">
+        <a href="#produtos" class="btn btn-primary">Conhecer os Blends</a>
+        <a href="#doshas" class="btn btn-outline">Descubra seu Dosha</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção O que é Ayurveda -->
+  <section id="ayurveda" class="section">
+    <div class="container">
+      <div class="organic-card">
+        <div class="section-header">
+          <h2>Conheça o Ayurveda e os Doshas</h2>
+          <div class="divider-leaf">✦</div>
+        </div>
+
+        <div class="ayurveda-grid">
+          <div class="info-block">
+            <h3>O que é Ayurveda?</h3>
+            <p>
+              O Ayurveda é a <strong>ciência da vida</strong> (<em>Ayur</em> = vida, <em>Veda</em> = conhecimento), um sistema milenar de medicina tradicional da Índia que busca o equilíbrio do corpo, mente e espírito através de hábitos saudáveis, alimentação e práticas naturais.
+            </p>
+          </div>
+          <div class="info-block">
+            <h3>O que são Doshas?</h3>
+            <p>
+              São três forças vitais (biotipos) que governam nossas funções fisiológicas e psicológicas. Cada pessoa tem uma constituição única composta pela combinação dessas energias, que podem ser harmonizadas com ervas específicas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Os 3 Doshas com ícones em traço fino iguais à referência -->
+        <div id="doshas" class="doshas-grid">
+          <!-- VATA -->
+          <div class="dosha-item">
+            <div class="dosha-svg">
+              <svg viewBox="0 0 80 65" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+                <path d="M10 22 H48 C54 22 57 17 54 13 C51 9 45 12 46 17" />
+                <path d="M6 34 H58 C65 34 69 28 65 23 C61 19 54 23 56 29" />
+                <path d="M16 46 H44 C50 46 53 51 49 55 C45 59 40 55 42 50" />
+              </svg>
+            </div>
+            <h4>VATA</h4>
+            <span class="dosha-elements">Ar + Éter</span>
+            <p class="dosha-trait">Criativo, leve e comunicativo</p>
+            <p class="dosha-tip">Beneficia-se de chás aquecedores, especiarias suaves e escalda-pés relaxantes para acalmar a mente.</p>
+          </div>
+
+          <!-- PITTA -->
+          <div class="dosha-item">
+            <div class="dosha-svg">
+              <svg viewBox="0 0 80 65" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M40 10 C40 10 56 24 56 39 C56 49 49 56 40 56 C31 56 24 49 24 39 C24 32 28 26 31 23 C31 28 34 30 36 28 C34 21 37 14 40 10 Z" />
+                <path d="M40 34 C44 38 46 43 44 48 C42 51 38 51 36 48 C34 44 37 38 40 34 Z" />
+                <line x1="18" y1="24" x2="21" y2="26" />
+                <line x1="62" y1="24" x2="59" y2="26" />
+                <line x1="15" y1="38" x2="19" y2="38" />
+                <line x1="65" y1="38" x2="61" y2="38" />
+              </svg>
+            </div>
+            <h4>PITTA</h4>
+            <span class="dosha-elements">Fogo + Água</span>
+            <p class="dosha-trait">Determinado, focado e intenso</p>
+            <p class="dosha-tip">Harmoniza-se com ervas refrescantes, florais e digestivas que suavizam o calor interno.</p>
+          </div>
+
+          <!-- KAPHA -->
+          <div class="dosha-item">
+            <div class="dosha-svg">
+              <svg viewBox="0 0 80 65" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 44 L29 18 L43 37 L53 24 L68 44" />
+                <path d="M23 27 L29 31 L34 26" />
+                <path d="M48 30 L53 33 L58 29" />
+                <path d="M10 49 Q20 45 30 49 T50 49 T70 49" />
+                <path d="M14 55 Q24 51 34 55 T54 55 T66 55" />
+              </svg>
+            </div>
+            <h4>KAPHA</h4>
+            <span class="dosha-elements">Terra + Água</span>
+            <p class="dosha-trait">Estável, acolhedor e sereno</p>
+            <p class="dosha-tip">Revigora-se com infusões aromáticas, raízes estimulantes e banhos de pés revigorantes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção de Produtos -->
+  <section id="produtos" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nossos Pacotinhos Naturais</h2>
+        <p class="section-desc">Escolha seus blends e monte seu pedido para finalizar diretamente pelo WhatsApp.</p>
+      </div>
+
+      <!-- Filtros por Categoria -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="cha">Chás Terapêuticos</button>
+        <button class="filter-btn" data-filter="escalda-pes">Escalda-Pés</button>
+      </div>
+
+      <!-- Grade renderizada dinamicamente pelo script.js -->
+      <div class="products-grid" id="productsGrid"></div>
+    </div>
+  </section>
+
+  <!-- Seção Sobre a GabiVeda -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <div class="organic-card about-box">
+        <h2>Sobre a GabiVeda</h2>
+        <p>
+          Cada pacotinho da <strong>GabiVeda</strong> nasce do estudo dedicado sobre os saberes do Ayurveda e do respeito ao tempo da natureza. As ervas, flores e especiarias são combinadas artesanalmente em pequenas quantidades para preservar seus aromas, óleos essenciais e propriedades terapêuticas — levando um ritual simples de autocuidado para a sua rotina.
+        </p>
+        <a href="https://wa.me/5511989115258?text=Ol%C3%A1%20Gabi!%20Vim%20pelo%20site%20da%20GabiVeda%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20blends%20ayurv%C3%A9dicos." target="_blank" rel="noopener" class="btn btn-outline">
+          Falar com a Gabi no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-brand">🌿 GabiVeda — Terapias Naturais & Ayurveda</p>
+      <p class="footer-note">Atendimento e encomendas via WhatsApp: (11) 98911-5258</p>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="https://wa.me/5511989115258?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20na%20GabiVeda." target="_blank" rel="noopener" class="whatsapp-float" title="Chamar no WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor">
+      <path d="M16.004 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.256.59 4.46 1.71 6.404L3.2 28.8l6.564-1.72a12.74 12.74 0 0 0 6.24 1.632h.006c7.058 0 12.796-5.74 12.796-12.8a12.72 12.72 0 0 0-3.75-9.05A12.71 12.71 0 0 0 16.004 3.2zm0 23.36h-.004a10.62 10.62 0 0 1-5.414-1.482l-.388-.23-3.896 1.02 1.04-3.798-.252-.402a10.61 10.61 0 0 1-1.628-5.668c0-5.87 4.776-10.646 10.648-10.646 2.844 0 5.516 1.108 7.526 3.12a10.57 10.57 0 0 1 3.116 7.53c0 5.872-4.776 10.646-10.648 10.646zm5.84-7.974c-.32-.16-1.894-.934-2.188-1.042-.294-.106-.508-.16-.72.16-.214.32-.828 1.042-1.014 1.256-.186.214-.374.24-.694.08-.32-.16-1.352-.498-2.574-1.588-.952-.85-1.594-1.898-1.78-2.218-.188-.32-.02-.494.14-.654.144-.144.32-.374.48-.56.16-.188.214-.32.32-.534.106-.214.054-.4-.026-.56-.08-.16-.72-1.736-.988-2.376-.26-.624-.524-.54-.72-.55l-.614-.01c-.214 0-.56.08-.854.4-.294.32-1.12 1.096-1.12 2.672s1.148 3.1 1.308 3.314c.16.214 2.258 3.448 5.47 4.834.764.33 1.36.526 1.826.674.768.244 1.466.21 2.018.128.616-.092 1.894-.774 2.16-1.522.268-.748.268-1.388.188-1.522-.08-.134-.294-.214-.614-.374z"/>
+    </svg>
+  </a>
+
+  <!-- Gaveta Lateral da Sacola de Pedidos -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Sua Sacola GabiVeda</h3>
+      <button class="close-cart" id="closeCartBtn" aria-label="Fechar sacola">✕</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+      <p class="empty-cart">Sua sacola está vazia. Adicione um chá ou escalda-pés!</p>
+    </div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total estimado:</span>
+        <strong id="cartTotal">R$ 0,00</strong>
+      </div>
+      <input type="text" id="customerName" class="customer-input" placeholder="Seu nome (opcional)" />
+      <button class="btn btn-primary btn-full" id="checkoutWhatsappBtn">
+        Enviar Pedido no WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
